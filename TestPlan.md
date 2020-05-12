@@ -22,10 +22,10 @@ This document is meant for internal use primarily.
 - **tbd**	to be determined
 
 ### 1.5	 References
-- [GitHub]()
-- [Blog]()
-- [Software Requirements Specification]()
-- [Software Architecture Document]()
+- [GitHub](https://github.com/One-Touch-Next-Gen/OneTouch)
+- [Blog](https://onetouch940978896.wordpress.com/2019/10/02/example-post/)
+- [Software Requirements Specification](https://github.com/One-Touch-Next-Gen/OneTouch/blob/master/SRS.md)
+- [Software Architecture Document](https://github.com/One-Touch-Next-Gen/OneTouch/blob/master/RUP_SAD.md)
 
 
 ## 2.	Evaluation Mission and Test Motivation
@@ -51,6 +51,7 @@ n/a
 n/a
 
 #### 5.1.2	Unit Testing
+|||
 |---|---|
 |Technique Objective|Every service request shall be done correctly. Possible exceptions are caught correctly.|
 |Technique|Unit testing the viewmodel and services|
@@ -156,20 +157,24 @@ with other tools?
 This table shows the staffing assumptions for the test effort.
 |Role|Minimum Resources Recommended(number of full-time roles allocated)|Specific Responsibilities or Comments|
 |---|---|---|
-|Test Manager||Provides management oversight.  Responsibilities include:  planning and logistics  agree mission  identify motivators acquire appropriate resources present management reporting advocate the interests of testevaluate effectiveness of test effort|
-|Test Designer|||
-|Tester|||
-|Test System Administrator|||
-|Database Administrator|||
-|Implementer|||
+|Test Manager|1|Provides management oversight.  Responsibilities include:  planning and logistics  agree mission  identify motivators acquire appropriate resources present management reporting advocate the interests of testevaluate effectiveness of test effort|
+|Test Designer|1|Defines the technical approach to the implementation of the test effort.  Responsibilities include: define test approach define test automation architecture verify test techniques define testability elements structure test implementation|
+|Tester|1|Implements and executes the tests. Responsibilities include: implement tests and test suites execute test suites log results analyze and recover from test failures document incidents|
+|Test System Administrator|1|Ensures test environment and assets are managed and maintained. Responsibilities include: 	administer test management system install and support access to, and recovery of, test environment configurations and test labs|
+|Database Administrator|1|Ensures test data (database) environment and assets are managed and maintained. Responsibilities include: support the administration of test data and test beds (database)|
+|Implementer|1|Implements and unit tests the test classes and test packages. Responsibilities include: creates the test components required to support testability requirements as defined by the designer|
 
 ### 10.2	Staffing and Training Needs
-tbd 
+n/a
 
 ## 11.	Iteration Milestones
-What are your milestones?
-Do you want to have 20%
-test coverage by Jun 18th?
-What are the risks?
-What assumptions do you
-have?
+|Milestone|Planned start Date|actual start date|planned end date|actual end date|
+|---|---|---|---|---|
+|First Unit Tests|06.05.20|08.05.20|12.05.20|10.05.20|
+|Tests integrated in CI|12.05.20|12.05.20|19.05.20||
+|20% coverage|13.05.20||27.05.20||
+## 12. Risks, Dependencies, Assumptions and Constaints
+n/a
+
+## 13. Management Process and Procedures
+n/a
