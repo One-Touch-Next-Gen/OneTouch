@@ -1,8 +1,9 @@
 language: csharp
-solution: MobileApp.sln
+solution: ./Application/MobileApp/MobileApp.sln
+
 install:
-  - nuget restore MobileApp.sln
+  - nuget restore ./Application/MobileApp/MobileApp.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - msbuild /p:Configuration=Release MobileApp.sln
+  - msbuild /p:Configuration=Release ./Application/MobileApp/MobileApp.sln
   - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
